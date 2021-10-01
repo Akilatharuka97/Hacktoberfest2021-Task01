@@ -1,4 +1,5 @@
 #include <iostream>
+using namespace std;;
 
 class Rectangle
 {
@@ -7,7 +8,7 @@ class Rectangle
     int width;
   
   public : 
-    int setLength(int no);
+    void setLength(int no);
     void setWidth(int no);
     int calcArea();
 };
@@ -25,7 +26,7 @@ class Rectangle
   int Rectangle::calcArea()
   {
     int area = length*width;
-    
+    return area;
   }
 
 int main()
@@ -37,6 +38,6 @@ int main()
   
 
   //print rectangel area
-  cout << r2.calcArea() <<endl;
+  cout << r1.calcArea() <<endl;
   return 0;
 }
